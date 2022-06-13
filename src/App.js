@@ -71,17 +71,28 @@ const App = () => {
               </Button>
             </div>
           </Grid>
-        </Grid>
 
-        {/* <div
-          style={{
-            backgroundImage: `url(${grp})`,
-            backgroundRepeatX: "no-repeat",
-            backgroundSize: "50% 120%",
-            height: "100vh",
-            width: "100%",
-          }}
-        ></div> */}
+          <Grid item sm={4}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "100vh",
+              }}
+            >
+              <div
+                style={{
+                  backgroundImage: `url(${grp})`,
+                  backgroundRepeatX: "no-repeat",
+                  backgroundSize: "50% 120%",
+                  height: "50vh",
+                  width: "100%",
+                }}
+              ></div>
+            </div>
+          </Grid>
+        </Grid>
       </div>
     </>
   );
