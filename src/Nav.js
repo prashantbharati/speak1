@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@material-ui/core";
+import { Button, Grid, Typography } from "@material-ui/core";
 import React from "react";
 import logo from "./images/Logo.jpg";
 const Nav = () => {
@@ -66,7 +66,7 @@ const Nav = () => {
                 fontSize: "20px",
                 marginLeft: "50px",
                 color: "black",
-                fontWeight: "300",
+                fontWeight: "500",
               }}
             >
               Support
@@ -77,12 +77,28 @@ const Nav = () => {
                 fontSize: "20px",
                 marginLeft: "50px",
                 color: "black",
-                fontWeight: "300",
+                fontWeight: "500",
               }}
             >
               Contact us
             </Typography>
           </div>
+        </Grid>
+
+        <Grid item sm={1}></Grid>
+        <Grid item sm={2}>
+          {" "}
+          <Button
+            style={{
+              backgroundColor: "#002A29",
+              color: "white",
+              marginTop: "13px",
+              marginLeft: "100px",
+            }}
+            variant="contained"
+          >
+            Join Now
+          </Button>
         </Grid>
       </Grid>
     </div>
