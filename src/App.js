@@ -1,6 +1,7 @@
 import React from "react";
 import bg4 from "./images/Bg4.png";
 import grp from "./images/Group.jpg";
+import "./index.css";
 const App = () => {
   return (
     <>
@@ -13,7 +14,7 @@ const App = () => {
           width: "100%",
         }}
       >
-        <div
+        {/* <div
           style={{
             backgroundImage: `url(${grp})`,
             backgroundRepeatX: "no-repeat",
@@ -21,7 +22,7 @@ const App = () => {
             height: "100vh",
             width: "100%",
           }}
-        ></div>
+        ></div> */}
       </div>
     </>
   );
