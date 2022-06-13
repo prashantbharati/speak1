@@ -1,6 +1,7 @@
 import React from "react";
 import bg4 from "./images/Bg4.png";
 import grp from "./images/Group.jpg";
+import grp2 from "./images/Group2.jpg";
 import { Grid, Container, Typography, Button } from "@material-ui/core";
 import "./index.css";
 import Nav from "./Nav";
@@ -98,6 +99,34 @@ const App = () => {
           </Grid>
         </Grid>
       </div>
+      {/*div 1 ends*/}
+
+      <Grid container>
+        <Grid item sm={1}></Grid>
+        <Grid item sm={6}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "100vh",
+              width: "50%",
+            }}
+          >
+            <div
+              style={{
+                height: "60%",
+                width: "100%",
+                backgroundImage: `url(${grp2})`,
+                backgroundSize: "100% 100%",
+              }}
+            ></div>
+          </div>
+        </Grid>
+
+        <Grid item sm={5}></Grid>
+      </Grid>
     </>
   );
 };

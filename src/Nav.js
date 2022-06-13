@@ -64,7 +64,7 @@ const Nav = () => {
               style={{
                 fontFamily: "Poppins",
                 fontSize: "20px",
-                marginLeft: "50px",
+                marginLeft: "60px",
                 color: "black",
                 fontWeight: "500",
               }}
