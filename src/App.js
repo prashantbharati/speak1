@@ -25,7 +25,7 @@ const App = () => {
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
-                height: "100vh",
+                height: "90vh",
                 fontSize: "70px",
                 color: "white",
               }}
@@ -81,7 +81,7 @@ const App = () => {
               style={{
                 display: "flex",
 
-                height: "100vh",
+                height: "90vh",
               }}
             >
               <div
@@ -91,6 +91,7 @@ const App = () => {
                   backgroundSize: "contain",
                   height: "90%",
                   width: "100%",
+                  marginLeft: "20px",
                 }}
               ></div>
             </div>
