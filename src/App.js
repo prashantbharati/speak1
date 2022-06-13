@@ -55,7 +55,7 @@ const App = () => {
                 style={{
                   fontFamily: "Poppins",
                   fontSize: "30px",
-                  marginLeft: "50px",
+                  marginLeft: "40px",
                 }}
               >
                 Learn english easily on one click from your house.
@@ -74,12 +74,13 @@ const App = () => {
             </div>
           </Grid>
 
-          <Grid item sm={4}>
+          <Grid item sm={3}></Grid>
+
+          <Grid item sm={5}>
             <div
               style={{
                 display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
+
                 height: "100vh",
               }}
             >
@@ -87,8 +88,8 @@ const App = () => {
                 style={{
                   backgroundImage: `url(${grp})`,
                   backgroundRepeatX: "no-repeat",
-                  backgroundSize: "50% 120%",
-                  height: "50vh",
+                  backgroundSize: "contain",
+                  height: "90%",
                   width: "100%",
                 }}
               ></div>
