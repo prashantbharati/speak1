@@ -3,6 +3,7 @@ import bg4 from "./images/Bg4.png";
 import grp from "./images/Group.jpg";
 import { Grid, Container, Typography, Button } from "@material-ui/core";
 import "./index.css";
+import Nav from "./Nav";
 const App = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const App = () => {
           width: "100%",
         }}
       >
+        <Nav />
         <Grid container>
           <Grid item sm={4}>
             <div
