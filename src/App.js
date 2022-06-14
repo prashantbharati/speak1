@@ -103,7 +103,7 @@ const App = () => {
 
       <Grid container>
         <Grid item sm={1}></Grid>
-        <Grid item sm={6}>
+        <Grid item sm={4}>
           <div
             style={{
               display: "flex",
@@ -124,8 +124,43 @@ const App = () => {
             ></div>
           </div>
         </Grid>
+        <Grid item sm={1}></Grid>
+        <Grid item sm={6}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
 
-        <Grid item sm={5}></Grid>
+              height: "100vh",
+            }}
+          >
+            <Typography
+              style={{
+                fontFamily: "Poppins",
+                fontSize: "60px",
+
+                color: "black",
+              }}
+            >
+              WHAT DO WE DO?
+            </Typography>
+
+            <Typography
+              style={{
+                fontFamily: "Poppins",
+                fontSize: "25px",
+                fontWeight: "200",
+                color: "black",
+              }}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </Typography>
+          </div>
+        </Grid>
       </Grid>
     </>
   );
