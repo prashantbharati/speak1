@@ -330,34 +330,221 @@ const App = () => {
           height: "100vh",
           width: "100%",
           postion: "fixed",
-          overflow: "hidden",
         }}
       >
-        <div style={{ position: "relative" }}>
-          <div
+        <div
+          style={{
+            height: "35vh",
+            width: "100%",
+
+            display: "flex",
+            justifyContent: "center",
+            backgroundImage: `url(${e1})`,
+            backgroundPosition: "0% 100%",
+            backgroundSize: "100%",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <Typography
             style={{
-              height: "35vh",
-              width: "100%",
-              position: "absolute",
-              display: "flex",
-              justifyContent: "center",
-              backgroundImage: `url(${e1})`,
-              backgroundPosition: "0% 100%",
-              backgroundSize: "100%",
-              backgroundRepeat: "no-repeat",
+              fontFamily: "Poppins",
+              fontSize: "60px",
+              marginTop: "20px",
+              color: "white",
             }}
           >
-            <Typography
-              style={{
-                fontFamily: "Poppins",
-                fontSize: "60px",
-                marginTop: "20px",
-                color: "white",
-              }}
-            >
-              Want to know more about us?
-            </Typography>
-          </div>
+            Want to know more about us?
+          </Typography>
+        </div>
+
+        <div style={{ height: "20vh", marginTop: "50px" }}>
+          <Grid container>
+            <Grid item sm={3}></Grid>
+
+            <Grid item sm={2}>
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "30px",
+                  fontWeight: "500",
+                  color: "black",
+                }}
+              >
+                About
+              </Typography>
+
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  fontWeight: "200",
+                  color: "black",
+                }}
+              >
+                Courses
+              </Typography>
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  fontWeight: "200",
+                  color: "black",
+                }}
+              >
+                What we do
+              </Typography>
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  fontWeight: "200",
+                  color: "black",
+                }}
+              >
+                Who are we
+              </Typography>
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  fontWeight: "200",
+                  color: "black",
+                }}
+              >
+                Blog
+              </Typography>
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  fontWeight: "200",
+                  color: "black",
+                }}
+              >
+                Books
+              </Typography>
+            </Grid>
+
+            <Grid item sm={2}>
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "30px",
+                  fontWeight: "500",
+                  color: "black",
+                }}
+              >
+                Support
+              </Typography>
+
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  fontWeight: "200",
+                  color: "black",
+                }}
+              >
+                24 hr support
+              </Typography>
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  fontWeight: "200",
+                  color: "black",
+                }}
+              >
+                Help Centre
+              </Typography>
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  fontWeight: "200",
+                  color: "black",
+                }}
+              >
+                Community
+              </Typography>
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  fontWeight: "200",
+                  color: "black",
+                }}
+              >
+                Customer Care
+              </Typography>
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  fontWeight: "200",
+                  color: "black",
+                }}
+              >
+                Research
+              </Typography>
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  fontWeight: "200",
+                  color: "black",
+                }}
+              >
+                Contact
+              </Typography>
+            </Grid>
+
+            <Grid item sm={2}>
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "30px",
+                  fontWeight: "500",
+                  color: "black",
+                }}
+              >
+                Contact Us
+              </Typography>
+
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  fontWeight: "200",
+                  color: "black",
+                }}
+              >
+                24 hr support
+              </Typography>
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  fontWeight: "200",
+                  color: "black",
+                }}
+              >
+                Help Centre
+              </Typography>
+              <Typography
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  fontWeight: "200",
+                  color: "black",
+                }}
+              >
+                Community
+              </Typography>
+            </Grid>
+
+            <Grid item sm={3}></Grid>
+          </Grid>
         </div>
       </div>
     </>
