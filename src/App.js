@@ -111,7 +111,6 @@ const App = () => {
               justifyContent: "center",
               alignItems: "center",
               height: "100vh",
-              width: "50%",
             }}
           >
             <div
@@ -119,7 +118,8 @@ const App = () => {
                 height: "60%",
                 width: "100%",
                 backgroundImage: `url(${grp2})`,
-                backgroundSize: "100% 100%",
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
               }}
             ></div>
           </div>
