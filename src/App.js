@@ -16,6 +16,7 @@ import Linkdin from "./images/LinkedIn.jpg";
 import { Grid, Typography, Button } from "@material-ui/core";
 import "./index.css";
 import Nav from "./Nav";
+import { typography } from "@material-ui/system";
 const App = () => {
   return (
     <>
@@ -556,13 +557,46 @@ const App = () => {
       {/*div 4 footer*/}
       <hr style={{ border: "1px solid black" }} />
       <div>
-        <div style={{ margin: "10px" }}>
-          <img src={facebook} style={{ height: "50px" }} alt="facebook" />
-          <img src={insta} style={{ height: "50px" }} alt="facebook" />{" "}
-          <img src={Pinterest} style={{ height: "50px" }} alt="facebook" />{" "}
-          <img src={Twitter} style={{ height: "50px" }} alt="facebook" />{" "}
-          <img src={Youtube} style={{ height: "50px" }} alt="facebook" />{" "}
-          <img src={Linkdin} style={{ height: "50px" }} alt="facebook" />{" "}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+
+            alignItems: "center",
+          }}
+        >
+          <div style={{ margin: "10px" }}>
+            <img src={facebook} style={{ height: "50px" }} alt="facebook" />
+            <img src={insta} style={{ height: "50px" }} alt="facebook" />{" "}
+            <img src={Pinterest} style={{ height: "50px" }} alt="facebook" />{" "}
+            <img src={Twitter} style={{ height: "50px" }} alt="facebook" />{" "}
+            <img src={Youtube} style={{ height: "50px" }} alt="facebook" />{" "}
+            <img src={Linkdin} style={{ height: "50px" }} alt="facebook" />{" "}
+          </div>
+
+          <Typography
+            style={{
+              fontFamily: "Poppins",
+              fontSize: "20px",
+              fontWeight: "200",
+              color: "black",
+              marginLeft: "600px",
+            }}
+          >
+            Terms and Conditions
+          </Typography>
+
+          <Typography
+            style={{
+              fontFamily: "Poppins",
+              fontSize: "20px",
+              fontWeight: "200",
+              color: "black",
+              marginLeft: "30px",
+            }}
+          >
+            Privacy Policy
+          </Typography>
         </div>
       </div>
     </>
