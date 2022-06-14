@@ -4,6 +4,7 @@ import grp from "./images/Group.jpg";
 import grp2 from "./images/Group2.jpg";
 import rect2 from "./images/Rectangle2.png";
 import e3 from "./images/Ellipse3.jpg";
+import e1 from "./images/Ellipse1.jpg";
 import customer from "./images/Customer.png";
 import book from "./images/book.jpg";
 import { Grid, Container, Typography, Button } from "@material-ui/core";
@@ -318,6 +319,30 @@ const App = () => {
               width: "200px",
               backgroundImage: `url(${book})`,
               backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
+        </div>
+      </div>
+
+      <div
+        style={{
+          height: "100vh",
+          width: "100%",
+          postion: "fixed",
+          overflow: "hidden",
+        }}
+      >
+        <div style={{ position: "relative" }}>
+          <div
+            style={{
+              height: "35vh",
+              width: "100%",
+              position: "absolute",
+
+              backgroundImage: `url(${e1})`,
+              backgroundPosition: "0% 100%",
+              backgroundSize: "100%",
               backgroundRepeat: "no-repeat",
             }}
           ></div>
