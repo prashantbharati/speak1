@@ -7,7 +7,13 @@ import e3 from "./images/Ellipse3.jpg";
 import e1 from "./images/Ellipse1.jpg";
 import customer from "./images/Customer.png";
 import book from "./images/book.jpg";
-import { Grid, Container, Typography, Button } from "@material-ui/core";
+import facebook from "./images/Facebook.jpg";
+import insta from "./images/Instagram.jpg";
+import Pinterest from "./images/Pinterest.jpg";
+import Twitter from "./images/Twitter.jpg";
+import Youtube from "./images/YouTube.jpg";
+import Linkdin from "./images/LinkedIn.jpg";
+import { Grid, Typography, Button } from "@material-ui/core";
 import "./index.css";
 import Nav from "./Nav";
 const App = () => {
@@ -545,6 +551,18 @@ const App = () => {
 
             <Grid item sm={3}></Grid>
           </Grid>
+        </div>
+      </div>
+      {/*div 4 footer*/}
+      <hr style={{ border: "1px solid black" }} />
+      <div>
+        <div style={{ margin: "10px" }}>
+          <img src={facebook} style={{ height: "50px" }} alt="facebook" />
+          <img src={insta} style={{ height: "50px" }} alt="facebook" />{" "}
+          <img src={Pinterest} style={{ height: "50px" }} alt="facebook" />{" "}
+          <img src={Twitter} style={{ height: "50px" }} alt="facebook" />{" "}
+          <img src={Youtube} style={{ height: "50px" }} alt="facebook" />{" "}
+          <img src={Linkdin} style={{ height: "50px" }} alt="facebook" />{" "}
         </div>
       </div>
     </>
