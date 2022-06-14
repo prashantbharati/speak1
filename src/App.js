@@ -339,13 +339,25 @@ const App = () => {
               height: "35vh",
               width: "100%",
               position: "absolute",
-
+              display: "flex",
+              justifyContent: "center",
               backgroundImage: `url(${e1})`,
               backgroundPosition: "0% 100%",
               backgroundSize: "100%",
               backgroundRepeat: "no-repeat",
             }}
-          ></div>
+          >
+            <Typography
+              style={{
+                fontFamily: "Poppins",
+                fontSize: "60px",
+                marginTop: "20px",
+                color: "white",
+              }}
+            >
+              Want to know more about us?
+            </Typography>
+          </div>
         </div>
       </div>
     </>
