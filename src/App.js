@@ -2,6 +2,7 @@ import React from "react";
 import bg4 from "./images/Bg4.png";
 import grp from "./images/Group.jpg";
 import grp2 from "./images/Group2.jpg";
+import rect2 from "./images/Rectangle2.png";
 import { Grid, Container, Typography, Button } from "@material-ui/core";
 import "./index.css";
 import Nav from "./Nav";
@@ -162,6 +163,18 @@ const App = () => {
           </div>
         </Grid>
       </Grid>
+
+      {/* div2 ends*/}
+
+      <div
+        style={{
+          backgroundImage: `url(${rect2})`,
+          backgroundRepeatX: "no-repeat",
+          backgroundSize: "75% 120%",
+          height: "100vh",
+          width: "100%",
+        }}
+      ></div>
     </>
   );
 };
