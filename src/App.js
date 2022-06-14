@@ -5,6 +5,7 @@ import grp2 from "./images/Group2.jpg";
 import rect2 from "./images/Rectangle2.png";
 import e3 from "./images/Ellipse3.jpg";
 import customer from "./images/Customer.png";
+import book from "./images/book.jpg";
 import { Grid, Container, Typography, Button } from "@material-ui/core";
 import "./index.css";
 import Nav from "./Nav";
@@ -252,6 +253,75 @@ const App = () => {
             </div>
           </Grid>
         </Grid>
+      </div>
+      {/*  div 3 ends */}
+
+      <div style={{ height: "100vh", marginTop: "100px" }}>
+        <div
+          style={{
+            display: "flex",
+            width: "100%",
+            justifyContent: "center",
+          }}
+        >
+          <Typography
+            style={{
+              fontFamily: "Poppins",
+              fontSize: "60px",
+
+              color: "black",
+            }}
+          >
+            OUR BOOKS
+          </Typography>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-evenly",
+            alignItems: "center",
+            height: "100vh",
+            width: "100%",
+          }}
+        >
+          <div
+            style={{
+              height: "300px",
+              width: "200px",
+              backgroundImage: `url(${book})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
+          <div
+            style={{
+              height: "300px",
+              width: "200px",
+              backgroundImage: `url(${book})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
+          <div
+            style={{
+              height: "300px",
+              width: "200px",
+              backgroundImage: `url(${book})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
+          <div
+            style={{
+              height: "300px",
+              width: "200px",
+              backgroundImage: `url(${book})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
+        </div>
       </div>
     </>
   );
