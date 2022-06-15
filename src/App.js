@@ -1,6 +1,6 @@
 import React from "react";
 import bg4 from "./images/Bg4.png";
-import grp from "./images/Group.jpg";
+import grp from "./images/Group.png";
 import grp2 from "./images/Group2.jpg";
 import rect2 from "./images/Rectangle2.png";
 import e3 from "./images/Ellipse3.jpg";
@@ -87,7 +87,7 @@ const App = () => {
             </div>
           </Grid>
 
-          <Grid item sm={3}></Grid>
+          <Grid item sm={0}></Grid>
 
           <Grid item sm={5}>
             <div
