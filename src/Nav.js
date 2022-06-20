@@ -7,16 +7,16 @@ const Nav = () => {
   return (
     <div id="header" className={classes.header}>
       <Grid container>
-        <Grid item sm={1}>
-          <div
-            style={{
-              backgroundImage: `url(${logo})`,
-              backgroundSize: "100% 100%",
-              backgroundRepeat: "no-repeat",
-              height: "10vh",
-            }}
-          ></div>
-        </Grid>
+        <div
+          style={{
+            backgroundImage: `url(${logo})`,
+            backgroundSize: "100% 100%",
+            backgroundRepeat: "no-repeat",
+            height: "10vh",
+            width: "100px",
+            margin: "5px 0px 0px 5px",
+          }}
+        ></div>
 
         <Grid item sm={2}></Grid>
 
