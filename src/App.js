@@ -16,7 +16,7 @@ import Youtube from "./images/YouTube.jpg";
 import Linkdin from "./images/LinkedIn.jpg";
 import { Grid, Typography, Button } from "@material-ui/core";
 import "./index.css";
-import Nav from "./Nav";
+import Nav from "./Nav2";
 import { typography } from "@material-ui/system";
 const App = () => {
   return (
