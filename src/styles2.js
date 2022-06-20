@@ -3,29 +3,28 @@ import { makeStyles } from "@material-ui/core/styles";
 export default makeStyles((theme) => ({
   header: {
     position: "fixed",
-
+    transition: "transform .5s ease-in-out",
     width: "100%",
     display: "flex",
     justifContent: "space-evenly",
-
-    transition: "0.6s",
 
     zIndex: "100",
   },
 
   headersticky: {
-    padding: "5px 100px",
-    transform: "trans",
-    height: "16vh",
+    fontSize: "20px",
+    transition: "transform .5s ease-in-out",
+    height: "13vh",
     background: "rgba(0, 0, 0, 0.45);",
     backdropFilter: "saturate(180%) blur(20px)",
   },
 
-  headersticky2: {
-    padding: "5px 100px",
-    height: "25vh",
-    background: "rgba(0, 0, 0, 0.45);",
-    backdropFilter: "saturate(180%) blur(20px)",
+  typography: {
+    fontFamily: "Poppins",
+    fontSize: "20px",
+    marginLeft: "50px",
+    color: "white",
+    fontWeight: "100",
   },
 
   button: {
@@ -59,10 +58,10 @@ export default makeStyles((theme) => ({
 
     // color: "#fff",
     textDecoration: "none",
-    fontSize: "1.1em",
-    fontWeight: "500",
+    fontSize: "20px",
+    fontWeight: "200",
     fontFamily: "Poppins",
-    textTransform: "uppercase",
+
     letterSpacing: "2px",
     color: "#fff",
   },
@@ -81,10 +80,10 @@ export default makeStyles((theme) => ({
 
   headerullia: {
     position: "relative",
-    margin: "0 10px",
+
     textDecoration: "none",
     color: "#000",
-    letterSpacing: "1px",
+
     fontWeight: "500px",
     fontSize: "17px",
     transition: "0.6s",
@@ -96,10 +95,5 @@ export default makeStyles((theme) => ({
     height: "100vh",
     background: "url(admin-ajax.jpg)",
     backgroundSize: "cover",
-  },
-
-  headerstickyullia: {
-    color: "#000",
-    fontSize: "125px",
   },
 }));

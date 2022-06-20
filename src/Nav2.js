@@ -21,7 +21,7 @@ const Nav = () => {
 
   return (
     <>
-      <header style={{ height: "15vh" }} className={classes.header}>
+      <header className={classes.header}>
         <img
           style={{
             opacity: "1",
@@ -88,17 +88,6 @@ const Nav = () => {
               href="/about"
             >
               ABOUT US
-            </a>
-          </li>
-          <li className={classes.headerulli}>
-            <a
-              id="urbanecology"
-              onMouseOver={doit}
-              onMouseOut={doit2}
-              className={classes.headerullia}
-              href="/urbanecology"
-            >
-              URBAN ECOLOGY
             </a>
           </li>
         </ul>

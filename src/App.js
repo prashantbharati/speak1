@@ -16,7 +16,7 @@ import Youtube from "./images/YouTube.jpg";
 import Linkdin from "./images/LinkedIn.jpg";
 import { Grid, Typography, Button } from "@material-ui/core";
 import "./index.css";
-import Nav from "./Nav2";
+import Nav from "./Nav";
 import { typography } from "@material-ui/system";
 const App = () => {
   return (
@@ -39,7 +39,10 @@ const App = () => {
             width: "100%",
           }}
         >
-          <Nav />
+          <div style={{ height: "10vh" }}>
+            <Nav />
+          </div>
+
           <Grid container>
             <Grid item sm={4}>
               <div
