@@ -59,7 +59,9 @@ const Nav = () => {
               className={classes.typography}
               style={{
                 marginLeft: "60px",
-                color: "black",
+                color: `${
+                  document.documentElement.scrollTop > 10 ? "white" : "black"
+                }`,
                 fontWeight: "500",
               }}
             >
@@ -70,7 +72,9 @@ const Nav = () => {
               className={classes.typography}
               style={{
                 marginLeft: "50px",
-                color: "black",
+                color: `${
+                  document.documentElement.scrollTop > 10 ? "white" : "black"
+                }`,
                 fontWeight: "500",
               }}
             >
@@ -97,32 +101,27 @@ const Nav = () => {
       </Grid>
 
       {window.addEventListener("scroll", function () {
+        console.log(document.documentElement.scrollTop);
         var header = document.getElementById("header");
         header.classList.toggle(classes.headersticky, window.scrollY > 0);
 
-        var logo = document.getElementById("t1");
-        logo.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
+        var t1 = document.getElementById("t1");
+        t1.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
 
-        var home = document.getElementById("t2");
-        home.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
+        var t2 = document.getElementById("t2");
+        t2.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
 
-        var filter = document.getElementById("t3");
-        filter.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
+        var t3 = document.getElementById("t3");
+        t3.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
 
-        var iwell = document.getElementById("t4");
-        iwell.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
+        var t4 = document.getElementById("t4");
+        t4.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
 
-        var blog = document.getElementById("t5");
-        blog.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
+        var t5 = document.getElementById("t5");
+        t5.classList.toggle(classes.headerstickylogo, window.scrollY > 0);
 
-        var aboutus = document.getElementById("ld");
-        aboutus.classList.toggle(classes.headerld, window.scrollY > 0);
-
-        var urbanecology = document.getElementById("urbanecology");
-        urbanecology.classList.toggle(
-          classes.headerstickylogo,
-          window.scrollY > 0
-        );
+        var ld = document.getElementById("ld");
+        ld.classList.toggle(classes.headerld, window.scrollY > 0);
       })}
     </div>
   );

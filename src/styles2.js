@@ -3,11 +3,11 @@ import { makeStyles } from "@material-ui/core/styles";
 export default makeStyles((theme) => ({
   header: {
     position: "fixed",
-    transition: "transform .5s ease-in-out",
+
     width: "100%",
     display: "flex",
     justifContent: "space-evenly",
-
+    transition: "0.6s",
     zIndex: "100",
   },
 
@@ -27,22 +27,6 @@ export default makeStyles((theme) => ({
     fontWeight: "100",
   },
 
-  button: {
-    // display: "table-cell",
-    padding: "8px 30px",
-    marginLeft: "30px",
-    backgroundColor: "#68CBC1",
-    color: "white",
-    textTransform: "uppercase",
-    fontSize: "16px",
-    fontWeight: "500",
-    letterSpacing: "0.2px",
-
-    borderStyle: "none",
-    borderRadius: "999px 999px 999px 999px",
-    boxShadow: "0px 5px 15px 0px rgb(39 48 112 / 51%)",
-  },
-
   headerlogo: {
     position: "relative",
     fontWeight: "700",
@@ -54,7 +38,7 @@ export default makeStyles((theme) => ({
     letterSpacing: "2px",
   },
   headerstickylogo: {
-    position: "relative",
+    // position: "relative",
 
     // color: "#fff",
     textDecoration: "none",
@@ -62,38 +46,6 @@ export default makeStyles((theme) => ({
     fontWeight: "200",
     fontFamily: "Poppins",
 
-    letterSpacing: "2px",
-    color: "#fff",
-  },
-
-  headerul: {
-    position: "relative",
-    fontFamily: "Poppins",
-    display: "flex",
-  },
-
-  headerulli: {
-    fontFamily: "Poppins",
-    position: "relative",
-    listStyle: "none",
-  },
-
-  headerullia: {
-    position: "relative",
-
-    textDecoration: "none",
-    color: "#000",
-
-    fontWeight: "500px",
-    fontSize: "17px",
-    transition: "0.6s",
-  },
-
-  banner: {
-    position: "relative",
-    width: "100%",
-    height: "100vh",
-    background: "url(admin-ajax.jpg)",
-    backgroundSize: "cover",
+    // letterSpacing: "2px",
   },
 }));
