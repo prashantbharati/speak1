@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import bg3 from "./images/Bg3.png";
 import bg4 from "./images/Bg4.png";
 import grp from "./images/Group.png";
@@ -7,18 +7,78 @@ import rect2 from "./images/Rectangle2.png";
 import e3 from "./images/Ellipse3.jpg";
 import e1 from "./images/Ellipse1.jpg";
 import customer from "./images/Customer.png";
-import book from "./images/book.jpg";
+
 import facebook from "./images/Facebook.jpg";
 import insta from "./images/Instagram.jpg";
 import Pinterest from "./images/Pinterest.jpg";
 import Twitter from "./images/Twitter.jpg";
 import Youtube from "./images/YouTube.jpg";
 import Linkdin from "./images/LinkedIn.jpg";
-import { Grid, Typography, Button } from "@material-ui/core";
+import { Grid, Typography, Button, makeStyles } from "@material-ui/core";
 import "./index.css";
 import Nav from "./Nav";
-import { typography } from "@material-ui/system";
+
+const useStyles = makeStyles((theme) => ({
+  animatedItem: {
+    animation: `$myEffect 1000ms ${theme.transitions.easing.easeInOut}`,
+  },
+  animatedItemExiting: {
+    animation: `$myEffectExit 1000ms ${theme.transitions.easing.easeInOut}`,
+  },
+  animatedItemExitingRight: {
+    animation: `$myEffectExitright 1000ms ${theme.transitions.easing.easeInOut}`,
+  },
+  animatedItem3: {
+    animation: `$myEffectExit3 1000ms ${theme.transitions.easing.easeInOut}`,
+  },
+
+  "@keyframes myEffect": {
+    "0%": {
+      opacity: 0,
+      transform: "translateX(-200%)",
+    },
+    "100%": {
+      opacity: 1,
+      transform: "translateX(0)",
+    },
+  },
+  "@keyframes myEffectExit": {
+    "0%": {
+      opacity: 0,
+      transform: "translateY(200%)",
+    },
+    "100%": {
+      opacity: 1,
+      transform: "translateY(0)",
+    },
+  },
+
+  "@keyframes myEffectExitright": {
+    "0%": {
+      opacity: 0,
+      transform: "translateX(200%)",
+    },
+    "100%": {
+      opacity: 1,
+      transform: "translateX(0)",
+    },
+  },
+
+  "@keyframes myEffectExit3": {
+    "0%": {
+      opacity: 0,
+      transform: "translateY(-200%)",
+    },
+    "100%": {
+      opacity: 1,
+      transform: "translateY(0)",
+    },
+  },
+}));
+
 const App = () => {
+  const classes = useStyles();
+
   return (
     <>
       <div
@@ -104,9 +164,22 @@ const App = () => {
               <div
                 style={{
                   display: "flex",
+                  transform: `${
+                    document.documentElement.scrollTop === 0
+                      ? "translateX(0%)"
+                      : "translateX(-200%)"
+                  } ${console.log(
+                    document.documentElement.scrollTop,
+                    "grp2"
+                  )}}`,
 
                   height: "90vh",
                 }}
+                className={
+                  document.documentElement.scrollTop === 0
+                    ? classes.animatedItem
+                    : ""
+                }
               >
                 <div
                   style={{
@@ -150,6 +223,7 @@ const App = () => {
         </Grid>
         <Grid item sm={1}></Grid>
         <Grid item sm={6}>
+          {console.log(document.documentElement.scrollTop)}
           <div
             style={{
               display: "flex",
@@ -305,42 +379,10 @@ const App = () => {
             width: "100%",
           }}
         >
-          <div
-            style={{
-              height: "300px",
-              width: "200px",
-              backgroundImage: `url(${book})`,
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
-            }}
-          ></div>
-          <div
-            style={{
-              height: "300px",
-              width: "200px",
-              backgroundImage: `url(${book})`,
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
-            }}
-          ></div>
-          <div
-            style={{
-              height: "300px",
-              width: "200px",
-              backgroundImage: `url(${book})`,
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
-            }}
-          ></div>
-          <div
-            style={{
-              height: "300px",
-              width: "200px",
-              backgroundImage: `url(${book})`,
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
-            }}
-          ></div>
+          <div className="book"></div>
+          <div className="book"></div>
+          <div className="book"></div>
+          <div className="book"></div>
         </div>
       </div>
 

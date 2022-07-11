@@ -60,7 +60,7 @@ const Nav = () => {
               style={{
                 marginLeft: "60px",
                 color: `${
-                  document.documentElement.scrollTop > 10 ? "white" : "black"
+                  document.documentElement.scrollTop === 0 ? "black" : "white"
                 }`,
                 fontWeight: "500",
               }}
@@ -73,7 +73,7 @@ const Nav = () => {
               style={{
                 marginLeft: "50px",
                 color: `${
-                  document.documentElement.scrollTop > 10 ? "white" : "black"
+                  document.documentElement.scrollTop === 0 ? "black" : "white"
                 }`,
                 fontWeight: "500",
               }}
@@ -102,6 +102,7 @@ const Nav = () => {
 
       {window.addEventListener("scroll", function () {
         console.log(document.documentElement.scrollTop);
+
         var header = document.getElementById("header");
         header.classList.toggle(classes.headersticky, window.scrollY > 0);
 
